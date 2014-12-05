@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/* default html tag styles */
+*{border: 0; margin: 0;}
+html, body {overflow: auto; width: 100%; height: 100%;}
+table, td, img {border: 0; align: middle;}
+ul {list-style-type: none;}
+
+/* 'class' styles */
+.hidden {display: none; visibility: hidden; width: 0px; height: 0px;}
+.left {float: left;}
+.right {float: right;}
+.help[title], .help-links a, .wiki {cursor: help;}
+.empty {display: block; width: 100%; height: 30px;}
+
+/* unique 'class','id' or dom styles */
+::selection {
+    background: rgb(69,70,70);
+    color: rgb(255,255,255);
+}
+::-moz-selection {
+    background: rgb(69,70,70);
+	color: rgb(255,255,255);
+}
+
+/* page content */
+body {
+    background: rgb(240,240,240);
+    font-family: sans;
+    font-size: 16px;
+    text-align: center;
+}
+article, .article {
+    font: 15px Constantia, 'Hoefler Text',  "Adobe Caslon Pro", Baskerville, Georgia, Times, serif;
+    color: #999999;
+    text-shadow: 2px 2px 2px rgba(200, 200, 200, 0.5);
+    display: block;
+    text-align: left;
+    width: 580px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+footer, #footer {
+    display: block;
+	margin: 3em 0 0 2px;
+	font-size: 12px;
+}
+a, .jslink {
+    color: rgb(100,100,105);
+    text-decoration: none;
+    -webkit-transition-duration: 300ms;
+}
+a:hover, .jslink:hover {
+    color: rgb(0,0,0);
+    text-shadow: 2px 2px 2px rgba(36, 109, 56, 0.5);
+}
+h1 {
+    font-size: 50px;
+    text-align: center;
+    background: rgb(0,0,0);
+    color: rgb(250,240,240);
+    margin-bottom: 20px;
+}
+pre {
+    font-family: Terminal;
+}
+pre i {
+    color: #666666;
+}
+.article h2:first-letter {
+    border-radius: 5px;
+    background: rgb(100,100,100);
+	color: rgb(250,240,240);
+	padding: 1px 6px;
+	font-style: normal;
+	font-weight: bold;
+	text-shadow: none;
+}
