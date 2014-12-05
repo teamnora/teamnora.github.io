@@ -46,7 +46,7 @@ footer, #footer {
 	font-size: 12px;
 }
 a, .jslink {
-    color: rgb(250,240,240);
+    color: #999999;
     text-decoration: none;
     -webkit-transition-duration: 300ms;
 }
